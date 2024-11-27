@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Stepper</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <div class="flex flex-col justify-center items-center space-y-5">
+      <h1 class="text-2xl font-semibold m-4">Stepper</h1>
+      <hr class="border-t-4 border-gray-300 my-4 w-full" />
+
+      <div class="flex flex-row justify-center items-center w-[90%]">
+        <p
+          class="h-8 w-8 rounded-full bg-blue-700 text-white flex justify-center items-center border-2 border-black"
+          id="step1"
+        >
+          1
+        </p>
+        <div class="border-t-4 border-gray-300 w-96" id="line-to-ship"></div>
+        <p
+          class="h-8 w-8 rounded-full bg-gray-300 text-black flex justify-center items-center border-2 border-black"
+          id="step2"
+        >
+          2
+        </p>
+        <div class="border-t-4 border-gray-300 w-96" id="line-to-payment"></div>
+        <p
+          class="h-8 w-8 rounded-full bg-gray-300 text-black flex justify-center items-center border-2 border-black"
+          id="step3"
+        >
+          3
+        </p>
+        <div class="border-t-4 border-gray-300 w-96" id="line-to-deliver"></div>
+        <p
+          class="h-8 w-8 rounded-full bg-gray-300 text-black flex justify-center items-center border-2 border-black"
+          id="step4"
+        >
+          4
+        </p>
+      </div>
+
+      <div class="flex flex-row justify-between items-center w-[75%]">
+        <p class="font-medium">Contact Details</p>
+        <p class="font-medium">Shipping Address</p>
+        <p class="font-medium mr-8">Payment</p>
+        <p class="font-medium mr-8">Delivered</p>
+      </div>
+
+      <p id="description" class="text-xl font-medium">
+        Add contact details for further communications.
+      </p>
+      <div class="flex flex-row space-x-10">
+        <button
+          type="button"
+          class="font-medium bg-gray-300 p-2 rounded-sm disabled:text-gray-300 disabled:bg-blue-100 disabled:cursor-not-allowed"
+          id="previous-btn"
+        >
+          Previous
+        </button>
+        <button
+          type="button"
+          class="font-medium bg-gray-300 p-2 rounded-sm disabled:text-gray-300 disabled:bg-blue-100 disabled:cursor-not-allowed"
+          id="next-btn"
+        >
+          Next
+        </button>
+      </div>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
